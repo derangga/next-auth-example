@@ -5,9 +5,17 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 First, run the development server:
 
 ```bash
+# run database with docker if needed
 docker compose up -d
+
+# configure prisma
 bunx prisma generate
 bunx prisma db push
+
+# setup NEXTAUTH_SECRET
+openssl rand -base64 32
+
+# run project
 bun dev
 ```
 
