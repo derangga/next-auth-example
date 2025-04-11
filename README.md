@@ -5,12 +5,9 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 First, run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
+docker compose up -d
+bunx prisma generate
+bunx prisma db push
 bun dev
 ```
 
